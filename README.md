@@ -1,3 +1,18 @@
 # Learning HTML, CSS, JavaScript & C++
 
-This repository contains my learning journey...
+🚀 **[View My Live HTML Website](https://mannukumar-dev.github.io/learning-html-css-javascript-cpp/)**
+
+---
+
+## 📚 What I'm Learning
+
+- HTML
+- C++
+
+## 💻 C++ Learning
+
+My C++ practice programs and exercises.
+
+## 🌐 HTML Learning
+
+My HTML practice and projects.
