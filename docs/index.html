@@ -1,139 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <img src="./banner.png" width="100%" alt="">
-        <h1>Learning HTML</h1>
-        <p>This is an HTML page where I am learning to show my work.</p>
+        
     </header>
-    
+
     <hr> <br><br>
 
     <main>
-        <h2>HTML Foundamentals</h2><hr>
-        <p>What is HTML? - HTML stands for HyperText Markup Language</p>
-        <p>HTML document structure - An HTML document is made up of a series of elements that define the structure and content of the page.</p>
-        <p><strong>Term:</strong> <strong>Definition</strong></p>
-        <p><strong>&lt;!DOCTYPE html&gt;</strong> - Declares that the document is an HTML5 document.</p>
-        <p><strong>&lt;html&gt;</strong> - The root element of an HTML document.</p>
-        <p><strong>&lt;head&gt;</strong> - Contains meta information about the document.</p>
-        <p><strong>&lt;body&gt;</strong> - Contains the visible content of the HTML document.</p>
-        <p><strong>HTML elements</strong> - The building blocks of an HTML document.</p>
-        <p><strong>HTML Tags</strong> - The syntax used to create HTML elements.</p>
-        <p><strong>Opening and closing tags</strong> - The syntax used to define the start and end of an HTML element.</p>
-        <p><strong>Nested elements</strong> - Elements that are contained within other elements.</p>
-        <p><strong>HTML attributes</strong> - Additional information about an HTML element.</p>
-        <p><strong>Comments</strong> - Text within the HTML code that is not displayed in the browser.</p>
-        <p><strong>Whitespace</strong> - The space between HTML elements.</p>
-        <p><strong>Case Sensitivity</strong> - HTML tags are not case-sensitive.</p>
-        <p><strong>Global attributes</strong> - Attributes that can be used on any HTML element.</p>
-        <br> <br> <hr>
+        <h2>Resume - </h2>
+        <section class="resume">
 
-        <h2>Text & Headings</h2>
-        <p>we have heading from 1 - 6 <strong>&lt;h1&gt;&lt;h6&gt;</strong></p>
-        <p>we have paragraph element <strong>&lt;p&gt;</strong> and more like &lt;br&gt; &lt;hr&gt; &lt;strong&gt; &lt;em&gt;</strong></p>
-        <br> <br> <hr>
-        
-         
-        <h2>Images, video, Lists, Table</h2>
-        <h3>lists</h3>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-        <ol>
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ol>
-        <h3>links</h3>
+            
 
-        <a href="https://www.google.com" target="_blank">Visit Google</a> <br> <br> <br>
-        <h3>images</h3>
-        <img src="https://images.unsplash.com/photo-1772437883387-8076cf660c65?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            width="100" alt="Dog image">
-        <h3>video</h3>
-        <video src="https://www.pexels.com/download/video/34279733/" autoplay loop width="522"></video>
-        <h3>
-            iframe
-        </h3>
-        <iframe src="https://www.youtube.com/embed/XfEMj-z3TtA" frameborder="0">
-        </iframe>
+            <div class="upper">
 
-        <br> <br>
-        <hr>
-        <h2>HTML Table</h2>
-        <table border="">
-            <thead>
-                <tr>
-                    <th colspan="3">Student Marks Sheet</th>
-                </tr>
-                <tr>
-                    <th>Student Name</th>
-                    <th>Subject</th>
-                    <th>Marks</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>john doe</td>
-                    <td>math</td>
-                    <td>88</td>
-                </tr>
-            </tbody>
-        </table>
+                <div class="name">
+                    <h1>Mannu Kumar</h1>
+                    <p>Student • Aspiring Software Developer</p>
+                </div>
 
-        <br> <br> <hr>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mannu-kumar-5502aa431/" target="_blank">
+                        LinkedIn
+                    </a>
 
-        <h2>HTML Forms and Input</h2>
+                    <a href="https://github.com/mannukumar-dev" target="_blank">
+                        GitHub
+                    </a>
 
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+                    <a href="mailto:mannukumar.codes@gmail.com">
+                        mannukumar.codes@gmail.com
+                    </a>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+                    
+                </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+            </div>
 
-            <fieldset>
-                <legend>Addresses</legend>
-                
-                <textarea name="address" id="address" cols="30" rows="10"></textarea>
-            </fieldset> <br> <br>
-            <select value="">
-                Select your country:
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <option value="IN">INDIA</option>
-            </select>
+
+            
+            <div class="middle">
+
+                <div class="profile-image">
+                    <img src="./assets/profile.jpeg" alt="Mannu Kumar">
+                </div>
+
+                <div class="about">
+                    <h2>About Me</h2>
+
+                    <p>
+                        I am Mannu Kumar, a BCA student at Manipal University Jaipur.
+                        I am interested in problem solving and software development.
+                        Currently, I am learning HTML, CSS and C++, while building my
+                        programming and web development fundamentals.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software developer and build
+                        useful, user-friendly applications. I am currently focusing
+                        on strengthening my programming fundamentals and plan to learn
+                        JavaScript next.
+                    </p>
+                </div>
+
+            </div>
+
+
+           
+            <div class="lower">
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h2>Education</h2>
+
+                    <div class="resume-item">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <p>Manipal University Jaipur</p>
+                        <span>Currently Pursuing</span>
+                    </div>
+                </div>
+
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h2>Skills</h2>
+
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>C++</span>
+                        <span>Problem Solving</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                </div>
+
+
+                <!-- Currently Learning -->
+                <div class="resume-section">
+                    <h2>Currently Learning</h2>
+
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+
+
+                <!-- Projects -->
+                <div class="resume-section">
+                    <h2>Projects</h2>
+
+                    <div class="resume-item">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A personal website showcasing my skills, learning journey
+                            and projects.
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <h3>Web Development Projects</h3>
+                        <p>
+                            Building responsive websites using HTML and CSS while
+                            improving my frontend development skills.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        ```
+
+        <section class="html-learning">
+            <h1>Learning HTML</h1>
+            <p>This is an HTML page where I am learning to show my work.</p> <hr> <br> <br> <br>
+            <h2>HTML Foundamentals</h2>
+            <hr>
+            <p>What is HTML? - HTML stands for HyperText Markup Language</p>
+            <p>HTML document structure - An HTML document is made up of a series of elements that define the structure
+                and content of the page.</p>
+            <p><strong>Term:</strong> <strong>Definition</strong></p>
+            <p><strong>&lt;!DOCTYPE html&gt;</strong> - Declares that the document is an HTML5 document.</p>
+            <p><strong>&lt;html&gt;</strong> - The root element of an HTML document.</p>
+            <p><strong>&lt;head&gt;</strong> - Contains meta information about the document.</p>
+            <p><strong>&lt;body&gt;</strong> - Contains the visible content of the HTML document.</p>
+            <p><strong>HTML elements</strong> - The building blocks of an HTML document.</p>
+            <p><strong>HTML Tags</strong> - The syntax used to create HTML elements.</p>
+            <p><strong>Opening and closing tags</strong> - The syntax used to define the start and end of an HTML
+                element.</p>
+            <p><strong>Nested elements</strong> - Elements that are contained within other elements.</p>
+            <p><strong>HTML attributes</strong> - Additional information about an HTML element.</p>
+            <p><strong>Comments</strong> - Text within the HTML code that is not displayed in the browser.</p>
+            <p><strong>Whitespace</strong> - The space between HTML elements.</p>
+            <p><strong>Case Sensitivity</strong> - HTML tags are not case-sensitive.</p>
+            <p><strong>Global attributes</strong> - Attributes that can be used on any HTML element.</p>
             <br> <br>
-            chekcbox: <input type="checkbox" name="checkbox" id="checkbox"> <br> <br>
-            <button>Submit</button>
-        </form>
+            <hr>
 
-        <br> <br> <hr>
-
-        <h2>HTML Documentations</h2> <span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">Visit the HTML Reference</a></span>
-        
-
-        <br><br><hr>
+            <h2>Text & Headings</h2>
+            <p>we have heading from 1 - 6 <strong>&lt;h1&gt;&lt;h6&gt;</strong></p>
+            <p>we have paragraph element <strong>&lt;p&gt;</strong> and more like &lt;br&gt; &lt;hr&gt; &lt;strong&gt;
+                &lt;em&gt;</strong></p>
+            <br> <br>
+            <hr>
 
 
+            <h2>Images, video, Lists, Table</h2>
+            <h3>lists</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <ol>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ol>
+            <h3>links</h3>
 
+            <a href="https://www.google.com" target="_blank">Visit Google</a> <br> <br> <br>
+            <h3>images</h3>
+            <img src="https://images.unsplash.com/photo-1772437883387-8076cf660c65?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="100" alt="Dog image">
+            <h3>video</h3>
+            <video src="https://www.pexels.com/download/video/34279733/" autoplay loop width="522"></video>
+            <h3>
+                iframe
+            </h3>
+            <iframe src="https://www.youtube.com/embed/XfEMj-z3TtA" frameborder="0">
+            </iframe>
+
+            <br> <br>
+            <hr>
+            <h2>HTML Table</h2>
+            <table border="">
+                <thead>
+                    <tr>
+                        <th colspan="3">Student Marks Sheet</th>
+                    </tr>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>john doe</td>
+                        <td>math</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br> <br>
+            <hr>
+
+            <h2>HTML Forms and Input</h2>
+
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <fieldset>
+                    <legend>Addresses</legend>
+
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </fieldset> <br> <br>
+                <select value="">
+                    Select your country:
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="IN">INDIA</option>
+                </select>
+                <br> <br>
+                chekcbox: <input type="checkbox" name="checkbox" id="checkbox"> <br> <br>
+                <button>Submit</button>
+            </form>
+
+            <br> <br>
+            <hr>
+
+            <h2>HTML Documentations</h2> <span><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">Visit the HTML
+                    Reference</a></span>
+
+
+            <br><br>
+            <hr>
+        </section>
     </main>
+
+
 
     <footer>
         <div> Here is footer</div>
     </footer>
-    
+
 
 </body>
+
 </html>
