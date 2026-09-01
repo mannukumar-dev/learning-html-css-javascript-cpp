@@ -7,6 +7,7 @@
 ## 📚 What I'm Learning
 
 - HTML
+- CSS
 - C++
 
 ## 💻 C++ Learning

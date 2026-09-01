@@ -149,9 +149,72 @@ int main()
     // Input: 1223342
     // Digit: 2  doubts
 
+    // int digit;
+    // cout<<"Enter the digit to count: ";
+    // cin>>digit;
+    // int count = 0;
+    // while(num > 0)
+    // {
+    //     int last_digit = num%10;
+    //     if(last_digit == digit)
+    //     {
+    //         count++;
+    //     }  
+    //     num /= 10; 
+    // }
+
+    // cout<<"The digit "<<digit<<" occurs "<<count<<" times."<<endl;
 
 
 
+    //question 7: Check Armstrong number.
+    // 153 → Armstrong
+
+
+    int cube_sum = 0;
+    
+    // while(num > 0)
+    // {
+    //     int last_digit = num%10;
+    //     cube_sum += last_digit*last_digit*last_digit;
+    //     num /= 10;
+    // }
+    // if(cube_sum == original_num)
+    // {
+    //     cout<<original_num<<" is an Armstrong number."<<endl;
+    // }
+    // else
+    // {
+    //     cout<<original_num<<" is not an Armstrong number."<<endl;
+    // }
+
+
+    //question 8: Print Armstrong numbers from 1 to N.
+    // for (int i = 1; i <= num; i++)
+    // {
+    //     int temp = i;
+    //     cube_sum = 0;
+    //     while(temp > 0)
+    //     {
+    //         int last_digit = temp%10;
+    //         cube_sum += last_digit*last_digit*last_digit;
+    //         temp /= 10;
+    //     }
+    //     if(cube_sum == i){
+    //         cout<<i<<" ";
+    //     } 
+    // }
+
+
+
+    //question 9: // Find GCD of two numbers. Find LCM of two numbers.
+
+    int num1, num2;
+    cout<<"Enter two numbers: ";
+    cin>>num1>>num2;
+    
+
+    
     
 
     return 0;
