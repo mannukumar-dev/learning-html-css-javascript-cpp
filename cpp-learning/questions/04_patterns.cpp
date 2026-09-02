@@ -1,6 +1,4 @@
-// 🟡 Level 4 — Patterns
 
-// These will make your nested-loop understanding much stronger.
 
 // 1.
 //     *
