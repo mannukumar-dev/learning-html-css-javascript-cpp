@@ -45,6 +45,14 @@
 //     0101
 //     10101
 
+
+// 8. 
+//     a
+//    aba
+//   ababa
+//  abababa
+// ababababa
+
 #include <iostream>
 using namespace std;
 
@@ -111,20 +119,28 @@ int main()
     // answer 7:
     for (int i = 0; i < num; i++)
     {
-        int value;
-
-        if (i % 2 == 0)
-            value = 1;
-        else
-            value = 0;
-
-        for (int j = 0; j <= i; j++)
-        {
-            cout << value;
-            value = 1 - value;
+        for(int j = 0; j <=i; j++){
+            cout<<(i+j+1)%2;
         }
 
         cout << endl;
     }
+
+
+
+    //answer 8:
+    for(int i = 0; i < num; i++){
+        for(int j = num-i-1; j > 0; j--){
+            cout<<" ";
+        }
+        for(int k = 0; k < 2*i+1; k++){
+            int bin = k % 2;
+            cout<<(char)(97+bin);
+        }
+    }
+
+
     return 0;
 }
+
+

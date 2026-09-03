@@ -12,6 +12,8 @@
 
 // question 12: Given the number of units of electricity consumed u, calculate and print the total electricity bill based on the following slab-rate system: Units Consumed Rate per Unit First 100 units ₹1.50 per unit Next 100 units (101–200) ₹2.50 per unit Next 100 units (201–300) ₹4.00 per unit Above 300 units ₹5.00 per unit A fixed surcharge of ₹50 is added to every bill regardless of consumption. This problem teaches cumulative slab-based calculation — each slab charges only the units that fall within that range, not the entire consumption at that rate.
 
+// question 13: Find the notes of to give a change 
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -269,6 +271,60 @@ int main()
     }
     amount += unit * 1.5;
     cout << fixed << setprecision(2) << amount << endl;
+
+
+
+    // answer 13: Find the notes of to give a change 
+    int cash;
+    cout<<"Enter the cash you want to change: ";
+    int n500=0, n200=0, n100=0, n50=0, n20=0, n10=0, n5=0, n2=0, n1=0;
+    cin>>cash;
+    if(cash >= 500){
+        n500 += cash / 500;
+        cash %= 500;
+    }
+    if(cash >= 200){
+        n200 += cash / 200;
+        cash %= 200;
+    }
+    if(cash >= 100){
+        n100 += cash / 100;
+        cash %= 100;
+    }
+    if(cash >= 50){
+        n50 += cash / 50;
+        cash %= 50;
+    }
+    if(cash >= 20){
+        n20 += cash / 20;
+        cash %= 20;
+    }
+    if(cash >= 10){
+        n10 += cash / 10;
+        cash %= 10;
+    }
+    if(cash >= 5){
+        n5 += cash / 5;
+        cash %= 5;
+    }
+    if(cash >= 2){
+        n2 += cash / 2;
+        cash %= 2;
+    }
+    if(cash >= 1){
+        n1 += cash / 1;
+        cash %= 1;
+    }
+
+    cout<<"500 notes "<<n500<<endl;
+    cout<<"200 notes "<<n200<<endl;
+    cout<<"100 notes "<<n100<<endl;
+    cout<<"50 notes "<<n50<<endl;
+    cout<<"20 notes "<<n20<<endl;
+    cout<<"10 notes "<<n10<<endl;
+    cout<<"5 coins "<<n5<<endl;
+    cout<<"2 coins "<<n2<<endl;
+    cout<<"1 coins "<<n1<<endl;
 
     return 0;
 }
