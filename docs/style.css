@@ -145,6 +145,23 @@ main > h1{
 .right{
     flex: 1;
     font-family: inherit;
-    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 80px;
 }
 
+.right .info{
+    line-height: 1.5;
+}
+
+.right .summary{
+    line-height: 1.5;
+}
+.right .experience{
+    line-height: 1.5;
+}
+
+.right .education{
+    line-height: 1.5;
+}
