@@ -106,6 +106,21 @@ void palindromeNumber(int n){
     cout<<boolalpha<<isPalindrome<<endl;
 }
 
+//answer 8:
+int gcd(int a, int b){
+    while (b != 0){
+        int rem = a % b;
+        a = b;
+        b = rem;
+    }
+    return a;
+}
+
+//answer 9:
+int lcm(int a, int b){
+    return (a*b)/gcd(a, b);
+    
+}
 
 
 
@@ -124,14 +139,16 @@ int main()
     int n;
     cout<<"Enter the number: ";
     cin>>n;
-    // checkEvenOdd(5);
-    // max_of_two(3, 2);
-    // max_of_three(2, 5, 4);
-    // factorial(4);
-    // checkPrime(4);
-    // checkPrime(n);
-    // reverseNumber(n);
-    // palindromeNumber(n);
+    checkEvenOdd(5);
+    max_of_two(3, 2);
+    max_of_three(2, 5, 4);
+    factorial(4);
+    checkPrime(4);
+    checkPrime(n);
+    reverseNumber(n);
+    palindromeNumber(n);
+    cout<<"GCD "<<gcd(12, 18)<<endl;
+    cout<<"LCM "<<lcm(12, 18)<<endl;
     power(2, 3);
     return 0;
 }
