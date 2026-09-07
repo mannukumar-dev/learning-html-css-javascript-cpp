@@ -1,7 +1,7 @@
 //ques 1:  Maximum/minimum
 //ques 2:  Reverse array
 //ques 3:  Search element
-//ques 4:  Count even/odd
+//ques 4:  Print even/odd
 //ques 5: Count positive/negative
 //ques 6: Sort array
 //ques 7: Second largest
@@ -10,6 +10,7 @@
 
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // answer 1:
@@ -60,6 +61,97 @@ void searchElement(int arr[], int length, int target){
     }
 }
 
+//answer 4:
+void printEvenOdd(int arr[], int lenght){
+    vector<int> even;
+    vector<int> odd;
+    for(int i = 0; i < lenght; i++){
+        if(arr[i] % 2 == 0){
+            even.push_back(arr[i]);
+        }
+        else{
+            odd.push_back(arr[i]);
+        }
+    }
+    cout<<"Even no.: ";
+    for(int i = 0; i < even.size(); i++){
+        cout<<even[i]<<" ";
+    }
+    cout<<"\nOdd no.: ";
+    for(int i = 0; i < odd.size(); i++){
+        cout<<odd[i]<<" ";
+    }
+    cout<<endl;
+    
+}
+
+
+//answer 5:
+void countPositiveNegative(int arr[], int length){
+    int countPositive = 0;
+    int countNegative = 0;
+
+    for(int i = 0; i < length; i++){
+        if(arr[i] < 0){
+            countNegative++;
+        }
+        else{
+            countPositive++;
+        }
+    }
+
+    cout<<"Positive numbers: "<<countPositive<<endl;
+    cout<<"Odd numbers: "<<countNegative<<endl;
+}
+
+//answer 6:
+void sortArray(int arr[], int length){
+    for(int i = 0; i < length; i++){
+        for(int j = 0; j < length - 1; j++){
+            if(arr[j] > arr[j+1]){
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+
+    cout<<"sorted array: ";
+    for (int i = 0; i < length; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+//answer 7:
+void secondLargest(int arr[], int length){
+    int largest = arr[0];
+    int second_largest = arr[0];
+    for (int i = 0; i < length; i++){
+        if(arr[i] > largest){
+            second_largest = largest;
+            largest = arr[i];
+        }
+        else if(arr[i]>second_largest && arr[i]!=largest){
+            second_largest = arr[i];
+        }
+    }
+    cout<<"Second largest no.: "<<second_largest<<endl;
+    
+}
+
+//answer 8:
+void duplicateElement(int arr[], int length){
+    cout<<"Duplicate element: ";
+    for (int i = 0; i < length; i++){
+        for(int j = i + 1; j < length; j++){
+            if(arr[i] == arr[j]){
+                cout<<arr[i]<<" ";
+                break;
+            }
+        }
+    }
+}
 
 int main() {
     
@@ -68,8 +160,8 @@ int main() {
     cout<<"Enter the length of array: ";
     cin>>length;
 
-    cout<<"Enter the target you want to find: ";
-    cin>>target;
+    // cout<<"Enter the target you want to find: ";
+    // cin>>target;
     for(int i = 0; i < length; i++){
         cout<<"Enter the "<<i+1<<" number: ";
         cin>>arr[i];
@@ -84,7 +176,12 @@ int main() {
     
     // maxMinVal(arr, length);
     // reverseArray(arr, length);
-    searchElement(arr, length, target);
+    // searchElement(arr, length, target);
+    // printEvenOdd(arr, length);
+    // countPositiveNegative(arr, length);
+    // sortArray(arr, length);
+    // secondLargest(arr, length);
+    duplicateElement(arr, length);
 
     
     return 0;
