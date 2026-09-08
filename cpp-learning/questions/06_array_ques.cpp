@@ -7,6 +7,7 @@
 //ques 7: Second largest
 //ques 8: Duplicate elements
 //ques 9: Merge arrays
+//ques 10: Rotation
 
 
 #include <iostream>
@@ -153,23 +154,41 @@ void duplicateElement(int arr[], int length){
     }
 }
 
+// answer 9:
+void mergeArray(int arr1[], int arr2[], int n1, int n2, int merge[]){
+    cout<<"Array_1 element: ";
+    for(int i = 0; i < n1; i++){
+        cout<<arr1[i]<<" ";
+        merge[i] = arr1[i];
+    }
+    cout<<"\nArray_2 element: ";
+    for(int i = 0; i < n2; i++){
+        cout<<arr2[i]<<" ";
+        merge[n1 + i] = arr2[i];
+    }
+    cout<<"\nMerge Array: ";
+    for(int i = 0; i < n1 + n2; i++){
+        cout<<merge[i]<<" ";
+    }
+}
+
 int main() {
     
-    int arr[100];
-    int length, target;
-    cout<<"Enter the length of array: ";
-    cin>>length;
+    // int arr[100];
+    // int length, target;
+    // cout<<"Enter the length of array: ";
+    // cin>>length;
 
     // cout<<"Enter the target you want to find: ";
     // cin>>target;
-    for(int i = 0; i < length; i++){
-        cout<<"Enter the "<<i+1<<" number: ";
-        cin>>arr[i];
-    }
-    cout<<"Element: ";
-    for (int i = 0; i < length; i++){
-        cout<<arr[i]<<" ";
-    }
+    // for(int i = 0; i < length; i++){
+    //     cout<<"Enter the "<<i+1<<" number: ";
+    //     cin>>arr[i];
+    // }
+    // cout<<"Element: ";
+    // for (int i = 0; i < length; i++){
+    //     cout<<arr[i]<<" ";
+    // }
     cout<<endl;
 
 
@@ -181,7 +200,13 @@ int main() {
     // countPositiveNegative(arr, length);
     // sortArray(arr, length);
     // secondLargest(arr, length);
-    duplicateElement(arr, length);
+    // duplicateElement(arr, length);
+
+    int arr1[4] = {12, 23, 43, 44};
+    int arr2[4] = {32, 45, 76, 85};
+    int merge[8];
+    
+    mergeArray(arr1, arr2, 4, 4, merge);
 
     
     return 0;
